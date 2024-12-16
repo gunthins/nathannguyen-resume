@@ -272,3 +272,20 @@ td {
         transform: rotate(45deg) translate(10px, 10px);
     }
 }
+
+.github-repo {
+    background-color: white;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2vw;
+    padding: 1vw;
+    margin: 0 auto;
+    
+}
+
+.github-repo a{
+    text-decoration: none;
+    color: black;
+}
