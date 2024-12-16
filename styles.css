@@ -1,0 +1,274 @@
+header {
+    position: fixed;
+    top: 40%;
+    left: 2%;
+    color: #42BA73;
+    font-size: 1vw;
+    background: black;
+    border-radius: 4vw;
+    border-width: 2px;
+    border-color: white;
+    border-style:solid;
+    padding: 2vw;
+}
+
+body{
+    background-color: #2B2C2D;
+}
+
+
+h2 {
+    text-align: center;
+    margin-top: 5vh;
+    color: #0D9FF4;
+}
+
+h3 {
+    margin-bottom: 1vh;
+    color: #DAD203;
+}
+
+small {
+    color: #CC6CE7;
+}
+
+strong {
+    color: #E2B203;
+}
+
+p {
+    line-height: 1.5;
+}
+
+li {
+    line-height: 1.3;
+    margin: 0;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: .5vh;
+    text-align: left;
+}
+
+.container {
+    margin: 5vh auto;
+    max-width: 40vw;
+    color: white;
+    font: 1.5vmin Arial, sans-serif;
+}
+
+.fade-in-section {
+    opacity: .6;
+    transition: opacity 0.6s ease, transform 1.5s ease;
+    height: 80vh;
+    transform: scale(.5);
+    padding: 5vh;
+    background: url('imgs/cmd_prompt.png');
+    background-size: 100% 100%;
+    border: 1px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 2vh;
+    align-items: center;
+    z-index: 10;
+    overflow-y: auto;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.6s ease-out, transform 0.3s ease-out;
+    z-index: 100;
+}
+
+.sticky {
+    position: sticky;
+    bottom: 4%;
+    top: 4%
+}
+
+
+.center {
+   text-align: center;
+   justify-content: center; 
+}
+
+.flex {
+    display: flex;;
+}
+
+.table-container {
+    width: 13vw; 
+    margin: 5vh;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    border: 1px solid #ddd;
+    border-radius: 1vh;
+    overflow: hidden;
+}
+
+.card-img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 2vw;
+    height: 50%;
+    background-color: #2B2C2D;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.card-content ul {
+    margin: 10px 0 0;
+    list-style-type: disc;
+}
+
+.card-content ul li {
+    margin: 10px 0;
+}
+
+.col-1 {
+    width: 75%;
+}
+
+.col-1
+
+.col-2 {
+    width: 25%;
+}
+
+.fade {
+    animation: fade 1s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 1vh;
+    margin-top: -2vh;
+    color: white;
+    font-weight: bold;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    font-size: 4vh;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.navigator {
+    position: fixed;
+    right: 17%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    font: 1.0vw Arial, sans-serif;
+}
+
+.navigator a {
+    display: block;
+    margin: 3vh 0;
+    padding: 1vw 3vh;
+    text-decoration: none;
+    color: #42BA73;
+    background-color: black;
+    border-radius: 4vw;
+    border-width: 2px;
+    border-color: white;
+    border-style:solid;
+    opacity: 0.5;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.navigator a.active {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.scroll-down-indicator {
+    text-align: center;
+    bottom: 20px;
+    width: 100%;
+    color: white;
+}
+
+.scroll-down-indicator p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.scroll-down-indicator .arrow {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.scroll-down-indicator .arrow span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    transform: rotate(45deg);
+    margin: -3px;
+    animation: arrow 1.5s infinite;
+}
+
+.scroll-down-indicator .arrow span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.scroll-down-indicator .arrow span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-10px, -10px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(10px, 10px);
+    }
+}
