@@ -5,21 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nathan Nguyen's Resume</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <img src="imgs/website_background.jpg" alt="Background" style="width: 40%; height: 100%; position: fixed; top: 0; left: 0; z-index: -1; border: .5vw outset white;">
     <header>
         <div class="header-format">
-             <h1>Nathan Nguyen's Resumé</h1>
+             <h1>Nathan Nguyen</h1>
+        </div>
+        <div class="header-info">
+            <p>Full Stack Web Developer / Data Engineer</p>
+            <p>therealnathannguyen@gmail.com</p>
         </div>
     </header>
+    
     <div class="navigator center">
-        <a href="#about-me">About Me</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#about-page">About this page</a>
+        <div class="nav-header">Resume</div>
+        <a href="#about-me"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;About Me</a>
+        <a href="#experience"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Experience</a>
+        <a href="#skills"><i class="fa fa-gavel" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Skills</a>
+        <a href="#projects"><i class="fa fa-paperclip" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Projects</a>
+        <a href="#education"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Education</a>
+        <a href="#about-page"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;About this page</a>
     </div>
+
     <div class="container">
         <main>
             <div id="intersection-goal" style="position: fixed; top: 30%; left: 30%; width: 40vh; height: 40vh;z-index: 10;">
@@ -28,7 +37,7 @@
             <div id="about-me" class="fade-in-section sticky is-visible" >
                 <h2>About Me</h2>
                 <div>
-                    <p class="center"><img src="imgs/self_portrait.jpg" alt="Self Portrait" style="width: 50%; border-radius: 150px"></p>
+                    <p class="center" style="text-align: center;"><img src="imgs/self_portrait.jpg" alt="Self Portrait" style="width: 50%; border-radius: 50%;"></p>
                     <p class="center">
                         Hi my name is <strong>Nathan Nguyen</strong> and I am <strong>Full Stack Web Developer / Data Engineer.</strong> 
                         Over my career I've worked with many different technologies for building analytical 
@@ -325,7 +334,7 @@
             <h2>Education</h2>
             <div class="center flex">
                 <div class="center table-container">
-                    <img src="imgs/azure_fundamentals_badge.png" alt="Azure Fundamentals Badge" style="width: 14vw; margin-right: 1vw;">
+                    <img src="imgs/azure_fundamentals_badge.png" alt="Azure Fundamentals Badge" style="width: 12vw; margin-right: 1vw;">
                     <div>
                         <p><strong>Azure Fundamentals Certification</strong><br>Completed May 2024</p>
                     </div>
@@ -345,10 +354,10 @@
             <h2>About this page</h2>
             <div class="center">
                 <p>Deployed through <strong>AWS</strong> using <strong>S3, CloudFront, ACM,</strong> and <strong>Route 53</strong>.
-                <br><img src="imgs/aws_architecture.png" alt="AWS Architecture" style="width: 65%; margin: 2vh 0; border-radius: 2vw;"></p>
+                <br><img src="imgs/aws_architecture.png" alt="AWS Architecture" style="width: 65%; margin: 2vh auto; display: block; border-radius: 2vw;"></p>
 
                 <p class=>Created using <strong>HTML, CSS, and JavaScript</strong></p>
-                <br><img src="imgs/front_end_stack.jpg" alt="Front end stack" style="width: 30%; margin: 2vh 0; border-radius: 2vw;">
+                <br><img src="imgs/front_end_stack.jpg" alt="Front end stack" style="width: 30%; margin: 2vh auto; display: block; border-radius: 2vw;">
                 
                 <p>View the code on <strong>GitHub</strong> by clicking on the icon below<br>
                     <a target="_blank" href="https://github.com/gunthins/nathannguyen-resume"><div class="github-repo"><img src="imgs/github_logo.png" alt="Github Repo" style="width: 15%; margin: 0; border-radius: 2vw;">gunthins/nathannguyen-resume</div></a></p>

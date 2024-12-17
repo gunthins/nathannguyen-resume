@@ -48,7 +48,7 @@ function showSlides(n) {
 document.addEventListener("scroll", function() {
     const indicator = document.querySelector(".scroll-down-indicator");
     const rect = indicator.getBoundingClientRect();
-    if (rect.top < window.innerHeight / 2) {
+    if (rect.top < window.innerHeight / 20) {
         indicator.style.display = "none";
     } else {
         indicator.style.display = "block";

@@ -1,26 +1,25 @@
 header {
     position: fixed;
-    top: 40%;
+    top: 5%;
     left: 2%;
-    color: #42BA73;
-    font-size: 1vw;
-    background: black;
-    border-radius: 4vw;
-    border-width: 2px;
-    border-color: white;
-    border-style:solid;
-    padding: 2vw;
+    color: black;
+    font: 1vw cursive;
+    background-color: white;
+    padding: 1vh 2vw;
 }
 
 body{
-    background-color: #2B2C2D;
+    background: linear-gradient(to right,#feb47b, #ff7e5f);
 }
 
 
 h2 {
-    text-align: center;
-    margin-top: 5vh;
+    text-align: left;
+    margin-top: 2vh;
     color: #0D9FF4;
+    border-top: lightgray 1px solid;
+    border-bottom: lightgray 1px solid;
+    padding: 1vh 0;
 }
 
 h3 {
@@ -54,11 +53,27 @@ td {
     text-align: left;
 }
 
+.header-info {
+    position: fixed;
+    bottom: 15%;
+    left: 15%;
+}
+
+.header-info p {
+    color: black;
+    background-color: white;
+    padding: 1vh 2vw;
+
+    text-decoration: none;
+}
+
 .container {
     margin: 5vh auto;
-    max-width: 40vw;
+    width: 40vw;
     color: white;
     font: 1.5vmin Arial, sans-serif;
+    position:absolute;
+    right: 15%;
 }
 
 .fade-in-section {
@@ -67,7 +82,7 @@ td {
     height: 80vh;
     transform: scale(.5);
     padding: 5vh;
-    background: url('imgs/cmd_prompt.png');
+    background: url('imgs/code_editor.png');
     background-size: 100% 100%;
     border: 1px;
     border-color: white;
@@ -93,7 +108,6 @@ td {
 
 
 .center {
-   text-align: center;
    justify-content: center; 
 }
 
@@ -144,7 +158,7 @@ td {
 }
 
 .card-content ul {
-    margin: 10px 0 0;
+    margin: 2vh 0 0;
     list-style-type: disc;
 }
 
@@ -196,31 +210,43 @@ td {
 
 .navigator {
     position: fixed;
-    right: 17%;
+    right: 3%;
     top: 50%;
     transform: translateY(-50%);
     z-index: 100;
-    font: 1.0vw Arial, sans-serif;
+    font: 1.2vmin Arial, sans-serif;
+    background: white;
+    border: #e2e2e2 2px solid;
+    border-radius: 2vw;
+    text-align: left;
+    padding: 3vh 0;
 }
 
 .navigator a {
     display: block;
-    margin: 3vh 0;
-    padding: 1vw 3vh;
+    margin: 1vh 0;
+    padding: 1.5vh 1.5vw;
     text-decoration: none;
-    color: #42BA73;
-    background-color: black;
-    border-radius: 4vw;
-    border-width: 2px;
-    border-color: white;
-    border-style:solid;
-    opacity: 0.5;
+    color: black;
+    opacity: 0.3;
     transition: transform 0.3s, opacity 0.3s;
+    font-weight: bold;
 }
 
 .navigator a.active {
-    transform: scale(1.2);
     opacity: 1;
+    color: white;
+    border-left: #0D9FF4 5px solid;
+    color: #0D9FF4;
+    background-color: #e0e0e0;
+}
+
+.nav-header {
+    font: 2.0vmin cursive;
+    padding: 1vh 2vw;
+    border-bottom: #e2e2e2 1px solid;
+    text-align: center;
+    font-weight: bold;
 }
 
 .scroll-down-indicator {
