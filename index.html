@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <img src="imgs/website_background.jpg" alt="Background" style="width: 40%; height: 100%; position: fixed; top: 0; left: 0; z-index: -1; border: .5vw outset white;">
+    <img class="header-img shadow" src="imgs/website_background.jpg" alt="Background" ">
     <header>
         <div class="header-format">
              <h1>Nathan Nguyen</h1>
@@ -19,8 +19,8 @@
         </div>
     </header>
     
-    <div class="navigator center">
-        <div class="nav-header">Resume</div>
+    <div class="navigator center shadow">
+        <div class="nav-header ">Resume</div>
         <a href="#about-me"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;About Me</a>
         <a href="#experience"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Experience</a>
         <a href="#skills"><i class="fa fa-gavel" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Skills</a>
@@ -34,10 +34,10 @@
             <div id="intersection-goal" style="position: fixed; top: 30%; left: 30%; width: 40vh; height: 40vh;z-index: 10;">
             </div>
 
-            <div id="about-me" class="fade-in-section sticky is-visible" >
+            <div id="about-me" class="fade-in-section sticky is-visible shadow" >
                 <h2>About Me</h2>
                 <div>
-                    <p class="center" style="text-align: center;"><img src="imgs/self_portrait.jpg" alt="Self Portrait" style="width: 50%; border-radius: 50%;"></p>
+                    <p class="center" style="text-align: center;"><img src="imgs/self_portrait.jpg" alt="Self Portrait" style="width: 50%; border-radius: 100%;"></p>
                     <p class="center">
                         Hi my name is <strong>Nathan Nguyen</strong> and I am <strong>Full Stack Web Developer / Data Engineer.</strong> 
                         Over my career I've worked with many different technologies for building analytical 
@@ -64,7 +64,7 @@
                 </span>
             </div>
             
-            <div id="experience" class="fade-in-section" >
+            <div id="experience" class="fade-in-section shadow" >
                 
                 <h2>Experience</h2>
                 <div>
@@ -105,7 +105,7 @@
             
 
 
-            <div id="skills" class="fade-in-section" >
+            <div id="skills" class="fade-in-section shadow" >
                 
                 <h2>Skills</h2>
                 <div class="center flex">
@@ -279,7 +279,7 @@
         </div>
         
 
-        <div id="projects" class="fade-in-section">
+        <div id="projects" class="fade-in-section shadow">
             <h2>Projects</h2>
             <div>
                 <div class="slideshow-container">
@@ -330,7 +330,7 @@
         
 
 
-        <div id="education" class="fade-in-section">
+        <div id="education" class="fade-in-section shadow">
             <h2>Education</h2>
             <div class="center flex">
                 <div class="center table-container">
@@ -350,7 +350,7 @@
         
 
 
-        <div id="about-page" class="fade-in-section">
+        <div id="about-page" class="fade-in-section shadow">
             <h2>About this page</h2>
             <div class="center">
                 <p>Deployed through <strong>AWS</strong> using <strong>S3, CloudFront, ACM,</strong> and <strong>Route 53</strong>.
